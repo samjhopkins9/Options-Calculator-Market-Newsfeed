@@ -1,0 +1,357 @@
+/* font importations */
+@font-face {
+    
+    font-family: 'Merriweather';
+    src: url("Resources/Fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+    
+}
+
+@font-face {
+    
+    font-family: 'Inconsolata';
+    src: url("Resources/Fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf") format("truetype");
+    
+}
+
+@font-face {
+    
+    font-family: 'SourceCodePro';
+    src: url("Resources/Fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+    
+}
+
+
+/* rulesets for overarching elements */
+html {
+    
+    color: #fff;
+    background-image: url('Resources/Background.jpg');
+    
+}
+
+header {
+    
+    font-family: 'Inconsolata';
+    text-align: center;
+    
+    
+}
+
+main {
+    
+    font-family: 'Merriweather';
+    
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* rulesets for links */
+
+a {
+    
+    color: #981;
+    transition: 0.1s;
+    
+}
+
+a:hover {
+    
+    color: #222;
+    transition: 0.1s;
+    
+}
+
+
+
+/* rulesets of strategy info section */
+
+#infobutton {
+    
+    background-color: #003a;
+    
+    border-radius: 15px;
+    padding: 10px;
+    
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    
+    
+}
+
+#infobutton:hover {
+    
+    cursor: pointer;
+    
+    background-color: #103e;
+    
+    transition: 0.2s;
+    
+}
+
+#stratinfo {
+    
+    /*
+    position: absolute;
+    z-index: 2;
+    
+    top: 23%;
+    right: 3.3%;
+     */
+    width: 30%;
+    position: relative;
+    left: 68%;
+    
+    background-color: #001;
+    padding: 1%;
+    margin-bottom: .5%;
+    border-radius: 15px;
+    
+}
+
+#symbolbutton:hover {
+    
+    background-color: #aaa;
+    cursor: pointer;
+    
+}
+
+
+/* ruleset of the newsfeed parent element */
+
+#news {
+    
+    font-size: 12px;
+    background-color: #003;
+    opacity: 85%;
+    border-radius: 15px;
+    
+    padding: 1%;
+    width: 30%;
+    position: relative;
+    
+
+}
+
+#stories {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.newsstory {
+    
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: row;
+        
+}
+
+.newsstory p {
+    
+    width: 80%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+.newsstory img {
+    
+    width: 10%;
+    padding-left: 5%;
+    padding-right: 1%;
+}
+
+
+
+/* rulesets of chart element and children */
+
+#chart {
+    
+    background-color: #00002280;
+    border-radius: 15px;
+    
+    width: 30%;
+    position: relative;
+    left: 4%;
+    padding: 1%;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+canvas {
+    
+    background-color: #000000;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border-bottom: 50px;
+    border-top: 50px;
+    
+}
+
+#randomchart:hover {
+    
+    cursor: pointer;
+    
+}
+
+
+/* ruleset of trading element and children */
+
+#trading {
+    
+    font-family: 'SourceCodePro';
+    font-size: 12px;
+    background-color: #010011;
+    opacity: 95%;
+    border-radius: 15px;
+    
+    padding: 1%;
+    width: 30%;
+    position: relative;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#child {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input[type="range"] {
+    
+    width: 100%;
+    
+}
+
+input[type="range"]:hover {
+    
+    cursor: pointer;
+    
+}
+
+
+/* table rulesets */
+
+#bigtable {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.smalltable {
+    
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.firstcol {
+    
+    padding-right: 14%;
+    padding-left: 14%;
+    
+}
+
+.pricecol {
+    
+    padding-right: 18%;
+    
+}
+
+tr {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+td {
+    
+    padding-right: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+@media only screen and (max-width: 1000px){
+    
+    html {
+        
+        zoom: 250%;
+        
+    }
+    
+    main {
+        
+        flex-direction: column;
+        
+    }
+    
+    #infobutton {
+        
+        top: 10%;
+        right: 30%;
+        
+    }
+    
+    #stratinfo {
+        
+        text-align: center;
+        width: 90%;
+        left: 4%;
+        
+    }
+    
+    #maindiv {
+        
+        position: relative;
+        top: 4%;
+        
+    }
+    
+    #news, #par, #chart{
+        
+        padding: 3%;
+        width: 85%;
+        
+    }
+    
+    #par, #news {
+        
+        left: 4%;
+        
+    }
+    
+    th {
+        
+        font-size: 10px;
+        position: relative;
+        left: 7%;
+        
+    }
+    
+    #bigtable {
+        
+        position: relative;
+        right: 10%;
+        top: 10px;
+        
+    }
+    
+}
